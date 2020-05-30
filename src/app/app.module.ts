@@ -9,6 +9,7 @@ import { ListcomponentComponent } from './listcomponent/listcomponent.component'
 import { DetailcomponentComponent } from './detailcomponent/detailcomponent.component';
 import { EmployeeService } from './employee.service';
 import { HttpClientModule } from '@angular/common/http';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     TestComponent,
     ListcomponentComponent,
     DetailcomponentComponent,
-    RoutingComponents
+    RoutingComponents,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,

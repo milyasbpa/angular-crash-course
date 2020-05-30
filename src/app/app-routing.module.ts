@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DetailcomponentComponent } from './detailcomponent/detailcomponent.component';
 import { ListcomponentComponent } from './listcomponent/listcomponent.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 const routes: Routes = [
   { path:'detail', component: DetailcomponentComponent},
-  { path:'list', component:ListcomponentComponent}
+  { path:'list', component:ListcomponentComponent},
+  { path:'**', component:PagenotfoundComponent}
 ];
 
 @NgModule({
