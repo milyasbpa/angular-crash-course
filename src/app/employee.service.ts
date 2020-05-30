@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { IEmployee } from './employee';
 import { Observable } from 'rxjs';
-// import 'rxjs/add/operator/catch';
+// import 'rxjs/add/operator/catch'; in rxjs 6 is not available
 import {catchError} from 'rxjs/operators'
-// import 'rxjs/add/observable/throw';
+// import 'rxjs/add/observable/throw'; in rxjs is not available
 import {throwError, of} from 'rxjs';
 
 @Injectable({
