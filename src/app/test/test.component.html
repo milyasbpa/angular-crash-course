@@ -1,0 +1,95 @@
+<!-- <p>atribut test works!</p> -->
+<!-- <p>Welcome {{name}} </p>
+<h1> {{4+4}} </h1>
+<h2> {{name.length}} </h2>
+<h3> {{name.toUpperCase()}} </h3>
+<p> {{greetUser()}} </p> -->
+<!-- cannot assignment like a= 2+2  or window.location.href secara langsung-->
+<!-- <h2> {{siteUrl}} </h2> -->
+
+<!-- Property Binding -->
+<!-- <h2>My name is {{name.toLowerCase()}} </h2> -->
+<!-- <input [disabled]="fungsi" type="text" value="Bashiroh"> -->
+<!-- <input bind-disabled="fungsi" type="text" value="Bashiroh"> -->
+
+<!-- Class Binding -->
+<!-- <h2>My name is {{name}} </h2>
+<h2 class="text-success"> Angular Developer </h2>
+<h2 [class]="successClass"> Angular Developer </h2>
+<h2 [class.text-danger]="isCondition"> Angular Developer </h2>
+
+<h2 [ngClass]="messageClass"> Angular Developer </h2> -->
+
+<!-- Style Binding -->
+<!-- <h2>My Name is {{name.toUpperCase()}} </h2>
+<h2 [style.color]="isCondition ? 'red' : 'green'" >Style Binding</h2>
+<h2 [style.color]="highlightColor" >Style Binding 2</h2>
+<h2 [ngStyle]="titleStyles" >Style Binding 3</h2> -->
+
+<!-- Event Handling -->
+<!-- <h2 [ngStyle]="titleStyles" > My name is {{name.toLowerCase()}} </h2> -->
+<!-- event ditutup sama kurung -->
+<!-- <button (click)="onClick()">Click Me</button> -->
+<!-- <br>
+<br> -->
+<!-- <button (click)="onClick()">Click Me</button> -->
+<!-- {{greetings}} -->
+<!-- <br>
+<br> -->
+<!-- jangan lupa pake dolar kalau mau lihat dom event -->
+<!-- <button (click)="onClickEvent($event)">Click Me</button>
+{{greetingsEventType}} -->
+<!-- <br>
+<br> -->
+<!-- inline -->
+<!-- <button (click)="greetingsEventType='Welcome to my home page'">Click Me</button>
+{{greetingsEventType}} -->
+
+<!-- Template Reference -->
+<!-- untuk akses input yang masuk untuk divalidasi atau akses nilai dom property -->
+<!-- <h2 [ngStyle]="titleStyles" > My name is {{name.toLowerCase()}} </h2>
+<input type="text" #myInput>
+<button (click)=onTemplateRef(myInput.value)>Submit</button> -->
+
+<!-- Two Way Data Binding -->
+<!-- <input [(ngModel)]="twoWayDataBinding"  type="text">
+<br>
+{{twoWayDataBinding}} -->
+
+<!-- IF dan ELSE -->
+<!-- <h2 *ngIf = "displayName" >My name is {{name.toUpperCase()}} </h2> -->
+<!-- <h2 *ngIf = "displayName; else elseBlock" >My name is {{name.toUpperCase()}} </h2> -->
+<!-- bisa diganti div -->
+<!-- <h2 *ngIf = "displayName; then thenBlock; else elseBlock" ></h2>
+
+<ng-template #thenBlock>
+    <h2>
+        My name is {{name}}
+    </h2>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h2>
+        Name is hidden
+    </h2>
+</ng-template> -->
+
+<!-- SWITCH -->
+<!-- <div [ngSwitch]="conditionalColor"> 
+    <div *ngSwitchCase="'red'"> You picked red color </div>
+    <div *ngSwitchCase="'blue'"> You picked blue color </div>
+    <div *ngSwitchCase="'green'"> You picked green color </div>
+</div> -->
+
+<!-- FOR -->
+<!-- <div *ngFor="let color of colors; index as i" >
+    <h2> {{i}}  {{color}} </h2>
+</div> -->
+<!-- first, last, odd, even binding -->
+<!-- <div *ngFor="let color of colors; even as e" >
+    <h2> {{e}}  {{color}} </h2>
+</div> -->
+
+<!-- Component Interaction -->
+<h2> {{parentName}} </h2>
+<button (click)=fireEvent()>Send to parent</button>
